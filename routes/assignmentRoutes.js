@@ -9,7 +9,7 @@ const router = express.Router();
     deleteAssignment
 } = require('../controllers/assignmentController');
 
-router.get('/',authenticateToken,getAllAssignment);
+router.get('/',getAllAssignment);
 
 router.post('/create-assignment',authenticateToken,addNewAssignment);
 
